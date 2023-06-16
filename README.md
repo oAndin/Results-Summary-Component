@@ -1,4 +1,4 @@
-# Frontend Mentor - Results summary component
+# This README is a TEMPLATE, which i will change after get this challenge done Frontend Mentor - Results summary component
 
 ![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)
 
