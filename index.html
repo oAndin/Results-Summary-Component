@@ -15,8 +15,23 @@
 
 <!-- MOBILE FIRST -->
 
-<body class="w-screen h-screen bg-lightLavender flex items-center justify-center">
+<body class="w-screen h-screen flex flex-col items-center justify-center md:bg-lightLavender">
 
+  <span id="first-box" class="
+  w-full h-hull flex flex-col items-center justify-center bg-gradient-to-r from-lightSlateBlue to-lightRoyalBlue rounded-b-3xl">
+    <h2 class="text-slate-400 p-8">Your result</h2>
+    <span id="circle" 
+    class="w-1/2 h-1/2 rounded-full bg-gradient-to-r from-violetBlue to-persianBlue flex flex-col items-center justify-center p-[4.5rem]">
+      <h1>76</h1>
+      <h4>of 100</h4>
+    </span>
+    <h1 class="text-slate-400 py-8">Great</h1>
+    <p class="text-center px-16 pb-6">You scored higher than 65% of the people who have taken these tests.</p>
+  </span>
+  <span id="second-box"
+  class="w-full h-full border-2 border-black">
+
+  </span>
   <!-- <main class="">
     <span id="bigBox" class="container flex border-2 border-black w-64  h-64">
         <span id="smBox" class="container flex w-full h-full bg-gradient-to-r from-lightSlateBlue to-lightRoyalBlue">
@@ -25,11 +40,11 @@
     </span>
   </main> -->
 
-  <!-- <div class="text-xs">
+  <div class="text-xs absolute bottom-0">
     Challenge by <a class="text-linkColor" href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend
       Mentor</a>.
     Coded by <a class="text-linkColor" href="#">Andherson Costa</a>.
-  </div> -->
+  </div>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
