@@ -19,10 +19,10 @@
 
   <span id="first-box"
     class="
-  w-full h-hull flex flex-col items-center justify-center bg-gradient-to-r from-lightSlateBlue to-lightRoyalBlue rounded-b-3xl">
-    <h2 class="text-slate-400 py-8">Your result</h2>
+  w-full h-hull flex flex-col items-center justify-center bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue rounded-b-3xl">
+    <h2 class="text-slate-400 py-8 font-bold">Your result</h2>
     <span id="circle"
-      class="w-32 h-32 rounded-full bg-gradient-to-r from-violetBlue to-persianBlue flex flex-col items-center justify-center py-8">
+      class="w-32 h-32 rounded-full bg-gradient-to-t from-persianBlue to-violetBlue flex flex-col items-center justify-center py-8">
       <h1 class="text-white text-6xl font-bold">76</h1>
       <h4 class="text-slate-400">of 100</h4>
     </span>
@@ -30,34 +30,35 @@
     <p class="text-center text-slate-400 px-16 pb-6">You scored higher than 65% of the people who have taken these
       tests.</p>
   </span>
-  <span id="second-box" class="w-full h-full border-2 border-black px-10 flex flex-col">
-    <h1>Summary</h1>
-    <span id="Reaction" class="h-10 bg-lightRed border-2 border-black">
-      Reaction
-    </span>
-    <span id="Memory" class="bg-orangeyYellow h-10 border-2 border-black">
-      Memory
-    </span>
-    <span id="Verbal" class="bg-greenTeal h-10 border-2 border-black">
-      Verbal
-    </span>
-    <span id="Visual" class="bg-cobaltBlue h-10 border-2 border-black">
-      Visual
-    </span>
+  <span id="second-box" class="w-full h-full border-black px-8 flex flex-col">
+    <h1 class="py-5 text-xl font-normal">Summary</h1>
+    <div id="categories" class="flex flex-col gap-4">
+      <span id="Reaction" class="h-12 bg-lightRed border-black rounded-lg text-red-500 flex items-center">
+        <i class="fa-solid fa-bolt pl-4" style="color: #FF5757;"></i>
+        <p class="p-4">Reaction</p>
+      </span>
+      <span id="Memory" class="bg-orangeyYellow h-12 text-yellow-500 border-black rounded-lg flex items-center">
+        <i class="fa-solid fa-brain pl-4" style="color: #FFB01F;"></i>
+        <p class="pl-4">Memory</p>
+      </span>
+      <span id="Verbal" class="bg-greenTeal h-12 text-green-500 border-black rounded-lg flex items-center">
+        <i class="fa-solid fa-comment-dots pl-4" style="color: #00BD91;"></i>
+        <p class="pl-4">Verbal</p>
+      </span>
+      <span id="Visual" class="bg-cobaltBlue text-blue-600 h-12 border-black rounded-lg flex items-center pl-4">
+      <i class="fa-regular fa-eye" style="color: #1125D4;"></i>
+      <p class="pl-4">Visual</p>
+      </span>
+      <button class="w-full h-16 rounded-full bg-black text-white">Continue</button>
+    </div>
   </span>
-  <!-- <main class="">
-    <span id="bigBox" class="container flex border-2 border-black w-64  h-64">
-        <span id="smBox" class="container flex w-full h-full bg-gradient-to-r from-lightSlateBlue to-lightRoyalBlue">
-
-        </span>
-    </span>
-  </main> -->
-
-  <div class="text-xs absolute bottom-0">
+  
+  <div class="text-xs mb-5">
     Challenge by <a class="text-linkColor" href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend
       Mentor</a>.
     Coded by <a class="text-linkColor" href="#">Andherson Costa</a>.
   </div>
+  <script src="https://kit.fontawesome.com/1887723c23.js" crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -68,18 +69,18 @@
         extend: {
           colors: {
             linkColor: '#3E52A3',
-            lightRed: '#FF5757',
-            orangeyYellow: '#FFB01F',
-            greenTeal: '#00BD91',
-            cobaltBlue: '#1125D4',
+            lightRed: '#FF575730',
+            orangeyYellow: '#FFB01F30',
+            greenTeal: '#00BD9130',
+            cobaltBlue: '#1125D430',
             white: '#FFFFFF',
             paleBlue: '#EBF1FF',
             lightLavender: '#C8C7FF',
             darkGrayBlue: '#303B5A',
             lightSlateBlue: '#7857FF',
             lightRoyalBlue: '#2E2BE9',
-            violetBlue: '#4E21CA',
-            persianBlue: '#2421CA'
+            violetBlue: '#4E21CA70',
+            persianBlue: '#2421CA50'
           }
         }
       }
